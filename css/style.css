@@ -1,12 +1,13 @@
 body{
 	background-image: url(../img/cheesy-popcorn.jpg);
 	background-repeat: no-repeat; 
-	background-size: 100% 100%;
+	background-size: cover;
 	background-attachment: fixed;
 	margin: 0;
 	padding: 0;
 	font-family: calibri;
 }
+
 header{
 	background-color: rgba(255,255,255,0.65);
 	width: 100%;
@@ -15,6 +16,9 @@ header{
 	box-shadow: 0px 2px 5px #8c8c8c;
 	position: fixed;
 	top: 0;
+}
+a{
+	top: 0%;
 }
 #menu{
 	margin: auto;
@@ -32,7 +36,7 @@ header{
 }
 .nav-left p{
 	margin:0 auto;
-	font-size: 20px;
+	font-size: 16pt;
 	top: 25%;
 	position: relative;
 }
@@ -49,17 +53,52 @@ header{
 	position: relative;
 	text-align: center;
 }
+.dropdown{
+	margin:0;
+	background-color: rgba(255,255,255,0.65);
+	width: inherit;
+	margin-top: 32px;
+	display: none;
+}
+.dropdown-data ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0 auto;
+	display: none;
+}
+.dropdown-data ul li{
+	font-size: 20px;
+	list-style-type: none;
+	padding: auto;
+	width: inherit;
+	height: 40px;	
+	text-align: center;
+	line-height: 40px;
+}
+
+.dropdown-data ul li:hover{
+	background-color: orange;
+	color:white;
+	}
 #menu .nav-right-wrapper .nav-right:hover{
 	background-color: orange;
 }
 #menu .nav-right-wrapper .nav-right:hover > a{
 	color: white;
 }
+
+#menu .nav-right-wrapper .nav-right:hover >.dropdown, .dropdown-data ul{
+	display: block;
+}
 .nav-right{
 	width :120px;
 	font-size: 30px;
 	display: inline-grid;
 	height: inherit;
+}
+
+.dropdown{
+	width: inherit;
 }
 #profile{
 	background-color: rgba(255,170,0,0.8);
@@ -87,7 +126,7 @@ header{
 }
 #desc{
 	width: 400px;
-	font-size: 17px;
+	font-size: 17pt;
 	word-wrap: break-word;
 	margin-top: 10px;
 }
