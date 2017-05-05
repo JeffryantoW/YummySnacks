@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Harlow Solid Italic Italic";
+    src: url(../font/Harlow-Solid-Italic-Italic.ttf) format("truetype");
+}
+
 body{
 	background-image: url(../img/cheesy-popcorn.jpg);
 	background-repeat: no-repeat; 
@@ -5,7 +10,7 @@ body{
 	background-attachment: fixed;
 	margin: 0;
 	padding: 0;
-	font-family: calibri;
+	font-family: ubuntu;
 }
 
 header{
@@ -16,9 +21,6 @@ header{
 	box-shadow: 0px 2px 5px #8c8c8c;
 	position: fixed;
 	top: 0;
-}
-a{
-	top: 0%;
 }
 #menu{
 	margin: auto;
@@ -32,17 +34,34 @@ a{
 	height: inherit;
 	position: relative;
 	display: inline-grid;
-	width: 150px;
+	width: auto;
+	height: inherit;
 }
 .nav-left p{
 	margin:0 auto;
-	font-size: 16pt;
-	top: 25%;
+	font-size: 30px;
 	position: relative;
+	font-family: "Harlow Solid Italic Italic";
+	letter-spacing: -1.9pt;
+	vertical-align: middle;
+	line-height: 56px;
+}
+.nav-left p:hover{
+	color:orange;
 }
 .nav-right-wrapper{
 	height: inherit;
 	float: right;
+}
+.nav-right{
+	width :130px;
+	font-size: 30px;
+	display: inline-grid;
+	height: inherit;
+	border-right: 2px solid #c1c1c1;
+}
+#home{
+	border-left: 2px solid #c1c1c1;
 }
 
 #menu .nav-right-wrapper .nav-right a{
@@ -55,7 +74,7 @@ a{
 }
 .dropdown{
 	margin:0;
-	background-color: rgba(255,255,255,0.65);
+	background-color: rgba(255,255,255,0.7);
 	width: inherit;
 	margin-top: 32px;
 	display: none;
@@ -65,6 +84,7 @@ a{
 	padding: 0;
 	margin: 0 auto;
 	display: none;
+
 }
 .dropdown-data ul li{
 	font-size: 20px;
@@ -89,12 +109,6 @@ a{
 
 #menu .nav-right-wrapper .nav-right:hover >.dropdown, .dropdown-data ul{
 	display: block;
-}
-.nav-right{
-	width :120px;
-	font-size: 30px;
-	display: inline-grid;
-	height: inherit;
 }
 
 .dropdown{
