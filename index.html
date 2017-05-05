@@ -14,11 +14,11 @@
 				<p>Yummy Snacks</p>
 			</div>
 			<div class="nav-right-wrapper">
-				<div class="nav-right">
-					<a href="index.html"><b>HOME</b></a>
+				<div class="nav-right" onclick="homes()" >
+					<a href="#home"><b>HOME</b></a>
 				</div>
 				<div class="nav-right">
-					<a href=""><b>PRODUCT</b></a>
+					<a href="product.html"><b>PRODUCT</b></a>
 					<div class="selector"></div>
 				</div>
 				<div class="nav-right">
@@ -27,8 +27,8 @@
 				<div class="nav-right">
 					<a href=""><b>SPONSORS</b></a>
 				</div>
-				<div class="nav-right">
-					<a href="about.html"><b>ABOUT US</b></a>
+				<div class="nav-right" id="about" onclick="abouts()">
+					<a href="#about" ><b>ABOUT US</b></a>
 				</div>
 			</div>
 		</div>
@@ -45,15 +45,19 @@
 				Yummy snack menggunakan bahan-bahan berkualitas dan diproses dengan baik sehingga menghasilkan snack dengan cita rasa yang enak.
 			</div>
 			<br>
-			<a href="about.html"><b>MORE INFO</b></a>
+			<a href="#" onclick="abouts()"><b>MORE INFO</b></a>
 		</center>
 	</div>
-	<center>
+	<center id="centerTimeline">
 		<div id="timeline">
 			
 		</div>
 	</center>
-	
-	
 </body>
+<footer>
+	<center>
+		Created By GROUP XXX
+	</center>
+	<script type="text/javascript" src="script/onePager.js"></script>
+</footer>
 </html>
