@@ -1,0 +1,97 @@
+body{
+	background-image: url(../img/cheesy-popcorn.jpg);
+	background-repeat: no-repeat; 
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	margin: 0;
+	padding: 0;
+	font-family: calibri;
+}
+header{
+	background-color: rgba(255,255,255,0.65);
+	width: 100%;
+	height: 56px;
+	margin: 0;
+	box-shadow: 0px 2px 5px #8c8c8c;
+	position: fixed;
+	top: 0;
+}
+#menu{
+	margin: auto;
+	height: inherit;
+	width: inherit;
+	padding: auto;
+	display: inline;
+}
+.nav-left{
+	float: left;
+	height: inherit;
+	position: relative;
+	display: inline-grid;
+	width: 150px;
+}
+.nav-left p{
+	margin:0 auto;
+	font-size: 20px;
+	top: 25%;
+	position: relative;
+}
+.nav-right-wrapper{
+	height: inherit;
+	float: right;
+}
+
+#menu .nav-right-wrapper .nav-right a{
+	font-size: 20px;
+	text-decoration: none;
+	color: black;
+	top: 25%;
+	position: relative;
+	text-align: center;
+}
+#menu .nav-right-wrapper .nav-right:hover{
+	background-color: orange;
+}
+#menu .nav-right-wrapper .nav-right:hover > a{
+	color: white;
+}
+.nav-right{
+	width :120px;
+	font-size: 30px;
+	display: inline-grid;
+	height: inherit;
+}
+#profile{
+	background-color: rgba(255,170,0,0.8);
+	width: 100%;
+	height: 450px;
+	color: white;
+	padding-top: 91px;
+}
+#profile a{
+	vertical-align: middle;
+	text-decoration: none;
+	color: white;
+	font-size: 19px;
+}
+#icon{
+	background-image: url(../img/logo.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 150px;
+	height: 150px;
+}
+#tagline{
+	margin-top: 20PX;
+	font-size: 30px;
+}
+#desc{
+	width: 400px;
+	font-size: 17px;
+	word-wrap: break-word;
+	margin-top: 10px;
+}
+#timeline{
+	height: 1000px;
+	width : inherit;
+}
