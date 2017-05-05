@@ -54,7 +54,7 @@ header{
 	float: right;
 }
 .nav-right{
-	width :130px;
+	width :120px;
 	font-size: 30px;
 	display: inline-grid;
 	height: inherit;
@@ -65,18 +65,18 @@ header{
 }
 
 #menu .nav-right-wrapper .nav-right a{
-	font-size: 20px;
+	font-size: 12pt;
 	text-decoration: none;
 	color: black;
-	top: 25%;
 	position: relative;
 	text-align: center;
+	vertical-align: middle;
+	line-height: 56px;
 }
 .dropdown{
 	margin:0;
 	background-color: rgba(255,255,255,0.7);
 	width: inherit;
-	margin-top: 32px;
 	display: none;
 }
 .dropdown-data ul{
@@ -87,7 +87,7 @@ header{
 
 }
 .dropdown-data ul li{
-	font-size: 20px;
+	font-size: 12pt;
 	list-style-type: none;
 	padding: auto;
 	width: inherit;
@@ -131,8 +131,8 @@ header{
 	background-image: url(../img/logo.png);
 	background-repeat: no-repeat;
 	background-size: 100%;
-	width: 150px;
-	height: 150px;
+	width: 200px;
+	height: 200px;
 }
 #tagline{
 	margin-top: 20PX;
