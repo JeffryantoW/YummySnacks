@@ -16,7 +16,7 @@ body{
 header{
 	background-color: rgba(255,255,255,0.65);
 	width: 100%;
-	height: 56px;
+	height: 50px;
 	margin: 0;
 	box-shadow: 0px 2px 5px #8c8c8c;
 	position: fixed;
@@ -25,9 +25,9 @@ header{
 #menu{
 	margin: auto;
 	height: inherit;
-	width: inherit;
 	padding: auto;
-	display: inline;
+	min-width: 860px;
+	width: inherit;	
 }
 .nav-left{
 	float: left;
@@ -44,7 +44,7 @@ header{
 	font-family: "Harlow Solid Italic Italic";
 	letter-spacing: -1.9pt;
 	vertical-align: middle;
-	line-height: 56px;
+	line-height: 50px;
 }
 .nav-left p:hover{
 	color:orange;
@@ -71,7 +71,7 @@ header{
 	position: relative;
 	text-align: center;
 	vertical-align: middle;
-	line-height: 56px;
+	line-height: 50px;
 }
 .dropdown{
 	margin:0;
@@ -116,10 +116,15 @@ header{
 }
 #profile{
 	background-color: rgba(255,170,0,0.5);
-	width: 100%;
-	height: 450px;
+	width: 90%;
+	height: 380px;
 	color: white;
-	padding-top: 91px;
+	margin-left: 5%;
+	margin-top: 50px;
+	padding-top: 5px;
+}
+#desc-wrapper{
+	width: inherit;
 }
 #profile a{
 	vertical-align: middle;
@@ -130,7 +135,7 @@ header{
 #icon{
 	background-image: url(../img/logo.png);
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: cover;
 	width: 200px;
 	height: 200px;
 }
@@ -139,12 +144,60 @@ header{
 	font-size: 30px;
 }
 #desc{
-	width: 400px;
+	width: inherit;
+	max-width: 400px;
+}
+#desc-text{
+	max-width: 400px;
 	font-size: 12pt;
 	word-wrap: break-word;
 	margin-top: 10px;
 }
-#timeline{
-	height: 1000px;
-	width : inherit;
+
+#news-info-title{
+	color:white;
+	margin-top: 2%;
+	font-size: 18pt;
+	border-bottom: 1px solid white;
+	width:90%;
 }
+
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+40% { left: 0%; }
+60% { left: -100%; }
+80% { left: -100%; }
+100% { left: 0%; }
+}
+
+#slider { 
+	overflow:hidden;
+	margin:2% 5% 2% 5%;
+	 }
+#slider figure img { 
+	width: 25%; 
+	float: left; 
+}
+#slider figure { 
+  position: relative;
+  width: 400%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 10s slidy infinite; 
+}
+
+footer{
+	background-color: rgba(255,170,0,0.5);
+	width: 90%;
+	height: 50px;
+	color: white;
+	margin-left: 5%;
+	margin-top: 2%;
+	padding-top: 5px;
+	vertical-align: middle;
+	line-height: 50px;
+}
+
