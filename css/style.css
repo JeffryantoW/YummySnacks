@@ -18,15 +18,17 @@ header{
 	width: 100%;
 	height: 50px;
 	margin: 0;
-	box-shadow: 0px 2px 5px #8c8c8c;
+	box-shadow: 0px 3px 5px #8c8c8c;
 	position: fixed;
 	top: 0;
 }
-#menu{
+.nav-menu-logo{
+	display: none;
+}
+.menu{
 	margin: auto;
 	height: inherit;
 	padding: auto;
-	min-width: 860px;
 	width: inherit;	
 }
 .nav-left{
@@ -35,7 +37,6 @@ header{
 	position: relative;
 	display: inline-grid;
 	width: auto;
-	height: inherit;
 }
 .nav-left p{
 	margin:0 auto;
@@ -48,13 +49,14 @@ header{
 }
 .nav-left p:hover{
 	color:orange;
+	cursor: default;
 }
 .nav-right-wrapper{
 	height: inherit;
 	float: right;
 }
 .nav-right{
-	width :130px;
+	min-width :120px;
 	font-size: 30px;
 	display: inline-grid;
 	height: inherit;
@@ -64,7 +66,7 @@ header{
 	border-left: 2px solid #c1c1c1;
 }
 
-#menu .nav-right-wrapper .nav-right a{
+.menu .nav-right-wrapper .nav-right, a{
 	font-size: 12pt;
 	text-decoration: none;
 	color: black;
@@ -72,6 +74,8 @@ header{
 	text-align: center;
 	vertical-align: middle;
 	line-height: 50px;
+	transition: font 0.1s ease;
+	cursor: pointer;
 }
 .dropdown{
 	margin:0;
@@ -100,20 +104,32 @@ header{
 	background-color: orange;
 	color:white;
 	}
-#menu .nav-right-wrapper .nav-right:hover{
+.menu .nav-right-wrapper .nav-right:hover{
 	background-color: orange;
 }
-#menu .nav-right-wrapper .nav-right:hover > a{
+.menu .nav-right-wrapper .nav-right:hover > a{
 	color: white;
 }
 
-#menu .nav-right-wrapper .nav-right:hover >.dropdown, .dropdown-data ul{
+.menu .nav-right-wrapper .nav-right:active > a{
+	font-size: 10pt;
+	text-decoration: none;
+	color: white;
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 54px;	
+	transition: font 0.1s ease
+}
+.menu .nav-right-wrapper .nav-right:hover >.dropdown, .dropdown-data ul{
 	display: block;
 }
 
 .dropdown{
 	width: inherit;
 }
+
+/*----------------------index.html--------------------------------*/
 #profile{
 	background-color: rgba(255,170,0,0.5);
 	width: 90%;
@@ -157,9 +173,10 @@ header{
 #news-info-title{
 	color:white;
 	margin-top: 2%;
-	font-size: 18pt;
-	border-bottom: 1px solid white;
+	font-size: 22pt;
+	border-bottom: 1px dashed white;
 	width:90%;
+	letter-spacing: 3px;
 }
 
 @keyframes slidy {
@@ -174,6 +191,7 @@ header{
 #slider { 
 	overflow:hidden;
 	margin:2% 5% 2% 5%;
+	width: 90%;
 	 }
 #slider figure img { 
 	width: 25%; 
@@ -185,19 +203,75 @@ header{
   margin: 0;
   left: 0;
   text-align: left;
+  z-index: -1;
   font-size: 0;
   animation: 10s slidy infinite; 
+}
+
+/*----------------------------about.html----------------------------------*/
+
+#content{
+	background-color: rgba(255,170,0,0.5);
+	width: 90%;
+	height: 500px;
+	color: white;
+	margin-left: 5%;
+	margin-top: 50px;
+	padding-top: 5px;	
+}
+#map-wrapper{
+	display: inline-block;
+}
+#map{
+	height: 300px;
+	width: 25%;
+	border: 1px white dashed;
+	min-width: 300px;
+}
+#information-wrapper{
+	display: inline-block;
+	height: 300px;
+	position: relative;
+	bottom: 250px;	
+	width: auto;
+	margin-left: 2%;
+}
+#information{
+	top:123px;
+	position: relative;
+	text-align: left;
+	
 }
 
 footer{
 	background-color: rgba(255,170,0,0.5);
 	width: 90%;
-	height: 50px;
+	height: 40px;
 	color: white;
 	margin-left: 5%;
 	margin-top: 2%;
 	padding-top: 5px;
 	vertical-align: middle;
-	line-height: 50px;
+	line-height: 40px;
 }
 
+/*-----------------------------media-screen------------------------------*/
+
+@media screen and (max-width: 780px){
+	.nav-right-wrapper{
+		display: none;
+	}
+	.nav-menu-logo {
+		height: inherit;
+		width: 20px;
+		float: right;			
+		vertical-align: middle;
+		line-height: 60px;	
+		display: inline;
+		margin-right: 2%;
+	}
+	.nav-menu-logo img{
+		height: 20px;
+		width: 20px;		
+	}
+}
