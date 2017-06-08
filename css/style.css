@@ -208,6 +208,10 @@ header{
   animation: 10s slidy infinite; 
 }
 
+.imgPos{
+	display: none;
+}
+
 /*----------------------------about.html----------------------------------*/
 
 #content{
@@ -269,6 +273,10 @@ width: 33%;
 	margin-top: 50px;
 	z-index: -1;
 }
+#product-content-details-wrapper{
+	text-align: center;
+	padding-top: 10px;
+}
 #products-nav-wrapper{
 text-align: justify-all;
 background-color: rgba(255,255,255,0.65);
@@ -280,13 +288,30 @@ border-right: 2px solid #c1c1c1;
 #crackers{
 display: inline-block;
 border-right: 2px solid #c1c1c1;
-
 }
 #chips{
 display: inline-block;
 }
-#biscuit1,#biscuit2,#biscuit3{
+
+
+.imgPos{
 	display: inline-block;
+	filter: grayscale(100%);
+	border-radius: 50%;
+	padding: 0;
+	overflow: hidden;
+	height: 270px;
+	width: 270px;
+	margin:50px;
+}
+
+.imgPos > img{
+	margin: auto;
+}
+
+.imgPos:hover{
+	filter: none;
+
 }
 
 

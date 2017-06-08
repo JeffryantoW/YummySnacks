@@ -25,15 +25,15 @@
 			<div class="dropdown">
 				<div class="dropdown-data">
 					<ul>
-						<a href="products.html#biscuit"><li>Bicuits</li></a>
-						<a href="products.html#crackers"><li>Crackers</li></a>
-						<a href="#"><li>Chips</li></a>
+						<a href="products.html#biscuit" onClick="openSnacks('biscuit')"><li>Bicuits</li></a>
+						<a href="products.html#crackers" onClick="openSnacks('crackers')"><li>Crackers</li></a>
+						<a href="products.html#chips" onClick="openSnacks('chips')"><li>Chips</li></a>
 					</ul>
 				</div>
 			</div>
 				</div><!--
 			--><div class="nav-right">
-			<a href="">PURCHASE</a>
+			<a href="purchas.html">PURCHASE</a>
 				</div><!--
 			--><div class="nav-right">
 			<a href="">SPONSORS</a>
@@ -46,27 +46,49 @@
 </header>
 <div id="products-content">
 	<div id="products-nav-wrapper">
-		<div id="biscuit" class="products-menu tablinks">
-			<center><a href="#biscuit">Bisucit</a></center>
+		<div id="biscuit" class="products-menu">
+			<center><a href="#biscuit" onClick="openSnacks('biscuit')">Bisucit</a></center>
 		</div>
 		<div id="crackers" class="products-menu tablinks">
-			<center><a href="#crackers">Crackers</a></center>
+			<center><a href="#crackers" onClick="openSnacks('crackers')">Crackers</a></center>
 		</div>
-		<div id="chips" class="products-menu tablinks">
+		<div id="chips" class="products-menu tablinks" onClick="openSnacks('chips')">
 			<center><a href="#chips">Chips</a></center>
 		</div>
 	</div>
 
 	<div id="product-content-details-wrapper">
 		<div id="biscuit-wrapper" class="tabcontents">
-			<div id="biscuit1">
-				<img src="img/waffle.jpg" width="400">
+			<div id="biscuit1" class="imgPos">
+				<img src="img/waffle.jpg" width="500" height="281">
 			</div>	
-			<div id="biscuit2">
-				<img src="img/pretzels.jpg" width="400">
+			<div id="biscuit2" class="imgPos">
+				<img src="img/pretzels.jpg" width="500" height="281">
 			</div>
-			<div id="biscuit3">
-				<img src="img/cookies.jpg" width="400">
+			<div id="biscuit3" class="imgPos">
+				<img src="img/cookies.jpg" width="500" height="281">
+			</div>	
+		</div>
+		<div id="crackers-wrapper" class="tabcontents">
+			<div id="crackers1" class="imgPos">
+				<img src="img/crackers1.jpg" width="500" height="281">
+			</div>	
+			<div id="crackers2" class="imgPos">
+				<img src="img/crackers2.jpg" width="500" height="281">
+			</div>
+			<div id="crackers3" class="imgPos">
+				<img src="img/crackers3.jpg" width="500" height="281">
+			</div>	
+		</div>
+		<div id="chips-wrapper" class="tabcontents">
+			<div id="chips1" class="imgPos">
+				<img src="img/chips1.jpg" width="500" height="281">
+			</div>	
+			<div id="chips2" class="imgPos">
+				<img src="img/chips2.jpg" width="500" height="281">
+			</div>
+			<div id="chips3" class="imgPos">
+				<img src="img/chips3.jpg" width="500" height="281">
 			</div>	
 		</div>
 	</div>
