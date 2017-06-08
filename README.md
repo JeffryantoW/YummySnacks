@@ -12,6 +12,9 @@
 # http://ghk.h-cdn.co/assets/15/17/980x490/gallery-1429895211-waffles-1.jpg
 # https://www-tc.pbs.org/food/wp-content/blogs.dir/2/files/2015/11/soft-pretzels.jpg
 # http://tastykitchen.com/wp-content/uploads/2011/09/TK-Blog-Goldfish-Crackers-09.jpg
+# https://tanjungpauh.files.wordpress.com/2016/05/keripik_singkong_balado_cassava_chips.jpg?w=1000
+# https://search.chow.com/thumbnail/1280/800/www.chowstatic.com/assets/recipe_photos/28062_basic_cheese_nachos.jpg
+# https://sparkpeo.hs.llnwd.net/e2/guid/Spicy-Sweet-Potato-Chips/3dc6158f-d6f2-42be-bc97-22b1945d6275.jpg
 
 
 # done: dropdown, not resizeable background, meta, added font
