@@ -6,15 +6,16 @@
 	<title>Yummy Snack</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="icon"  href="img/logo.png">
-
+	<script src="js/jquery-3.2.1.min.js"></script>
+	
 </head>
-<body >
+<body>
 	<header>
 		<div class="menu">
 			<div class="nav-left">
 				<p>Yummy Snacks</p>
 			</div>
-			<div class="nav-menu-logo"><a href="#"><img src="img/menu-icon.png"></a></div>
+			<div class="nav-menu-logo"><img src="img/menu-icon.png"></div>
 			<div class="nav-right-wrapper">
 				<div class="nav-right" id ="home">
 					<a href="index.html">HOME</a>
@@ -43,38 +44,38 @@
 	</div>
 </div>
 </header>
-<div id="profile">
-	<center>
-	<div id="desc-wrapper">
-		<div id="icon" ></div>
-		<div id="tagline">
-			Yummy Snacks
+<div id="products-content">
+	<div id="products-nav-wrapper">
+		<div id="biscuit" class="products-menu tablinks">
+			<center><a href="#biscuit">Bisucit</a></center>
 		</div>
-		<div id="desc">
-		<div id="desc-text">
-			Yummy snack using high quality ingredients, processed with a special technique. Producing a next generation snacks
+		<div id="crackers" class="products-menu tablinks">
+			<center><a href="#crackers">Crackers</a></center>
 		</div>
-		</div>
-		<br>
-		<a href="about.html"><b>MORE INFO</b></a>
-		</div>
-	</center>
-</div>
-<center>
-<center><div id="news-info-title"><b>NEWS & UPDATE</b></div></center>
-	<div id="timeline">
-		<div id="slider">
-			<figure>
-				<img src="img/25134-HBC-Student-Discount-Banner-1024x458.jpg" alt>
-				<img src="img/OktoberFest-Banner.jpg" alt>
-			</figure>
+		<div id="chips" class="products-menu tablinks">
+			<center><a href="#chips">Chips</a></center>
 		</div>
 	</div>
-</center>
+
+	<div id="product-content-details-wrapper">
+		<div id="biscuit-wrapper" class="tabcontents">
+			<div id="biscuit1">
+				<img src="img/waffle.jpg" width="400">
+			</div>	
+			<div id="biscuit2">
+				<img src="img/pretzels.jpg" width="400">
+			</div>
+			<div id="biscuit3">
+				<img src="img/cookies.jpg" width="400">
+			</div>	
+		</div>
+	</div>
+</div>
 
 <footer>
 	<center><div class="footer-text">&copy Yummy Snack 2017</div></center>
 </footer>
+<script src="js/script.js"></script>
 
 </body>
 </html>

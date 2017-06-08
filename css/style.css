@@ -213,11 +213,11 @@ header{
 #content{
 	background-color: rgba(255,170,0,0.5);
 	width: 90%;
-	height: 500px;
+	min-height: 500px;
 	color: white;
 	margin-left: 5%;
 	margin-top: 50px;
-	padding-top: 5px;	
+	padding-top: 100px;	
 }
 #map-wrapper{
 	display: inline-block;
@@ -230,17 +230,15 @@ header{
 }
 #information-wrapper{
 	display: inline-block;
-	height: 300px;
 	position: relative;
-	bottom: 250px;	
+	bottom: 50px;	
 	width: auto;
 	margin-left: 2%;
 }
 #information{
-	top:123px;
 	position: relative;
 	text-align: left;
-	
+	font-size: 16pt;
 }
 
 footer{
@@ -254,6 +252,43 @@ footer{
 	vertical-align: middle;
 	line-height: 40px;
 }
+
+/*----------------------------products.html-----------------------------*/
+.products-menu{
+margin: auto;
+z-index: -1;
+width: 33%;
+}
+
+#products-content{
+	background-color: rgba(255,170,0,0.5);
+	width: 90%;
+	min-height: 500px;
+	color: white;
+	margin-left: 5%;
+	margin-top: 50px;
+	z-index: -1;
+}
+#products-nav-wrapper{
+text-align: justify-all;
+background-color: rgba(255,255,255,0.65);
+}
+#biscuit{
+display: inline-block;
+border-right: 2px solid #c1c1c1;
+}
+#crackers{
+display: inline-block;
+border-right: 2px solid #c1c1c1;
+
+}
+#chips{
+display: inline-block;
+}
+#biscuit1,#biscuit2,#biscuit3{
+	display: inline-block;
+}
+
 
 /*-----------------------------media-screen------------------------------*/
 
