@@ -6,6 +6,8 @@
 	<title>Yummy Snack</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="icon"  href="img/logo.png">
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/script.js"></script>
 
 </head>
 <body>
@@ -14,7 +16,17 @@
 			<div class="nav-left">
 				<p>Yummy Snacks</p>
 			</div>
-			<div class="nav-menu-logo"><img src="img/menu-icon.png"></div>
+				<div class="nav-menu-logo" onClick="popMenu()"><a href="#"><img src="img/menu-icon.png"></a>
+				<div class="nav-responsive">
+					<a href="index.html"><div id="homer" class="nr">Home</div></a>
+					<div id="productsr" class="nr">Products</div>
+					<a href="products.html#biscuit"><div id="biscuitr" class="nr">&#160&#160&#160&#160&#160Biscuit</div></a>
+					<a href="products.html#crackers"><div id="crackersr" class="nr">&#160&#160&#160&#160&#160Crackers</div></a>
+					<a href="products.html#chips"><div id="chipsr" class="nr">&#160&#160&#160&#160&#160Chips</div></a>
+					<a href="purchase.html"><div id="purchaser" class="nr">Purchase</div></a>
+					<a href=""><div id="sponsorsr" class="nr">Sponsor</div></a>
+					<a href="about.html"><div id="aboutusr" class="nr">About us</div></a>
+				</div></div>
 			<div class="nav-right-wrapper">
 				<div class="nav-right" id ="home">
 					<a href="index.html">HOME</a>
@@ -32,10 +44,10 @@
 			</div>
 				</div><!--
 			--><div class="nav-right">
-			<a href="purchas.html">PURCHASE</a>
+			<a href="purchase.html">PURCHASE</a>
 				</div><!--
 			--><div class="nav-right">
-			<a href="">SPONSORS</a>
+			<a href="sponsor.html">SPONSORS</a>
 				</div><!--
 			--><div class="nav-right">
 			<a href="about.html">ABOUT US</a>

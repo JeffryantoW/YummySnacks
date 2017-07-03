@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Yummy Snack</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon"  href="img/logo.png">
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/script.js"></script>
+
+</head>
+<body>
+	<header>
+		<div class="menu">
+			<div class="nav-left">
+				<p>Yummy Snacks</p>
+			</div>
+			<div class="nav-menu-logo" onClick="popMenu()"><a href="#"><img src="img/menu-icon.png"></a>
+				<div class="nav-responsive">
+					<a href="index.html"><div id="homer" class="nr">Home</div></a>
+					<div id="productsr" class="nr">Products</div>
+					<a href="products.html#biscuit"><div id="biscuitr" class="nr">&#160&#160&#160&#160&#160Biscuit</div></a>
+					<a href="products.html#crackers"><div id="crackersr" class="nr">&#160&#160&#160&#160&#160Crackers</div></a>
+					<a href="products.html#chips"><div id="chipsr" class="nr">&#160&#160&#160&#160&#160Chips</div></a>
+					<a href="purchase.html"><div id="purchaser" class="nr">Purchase</div></a>
+					<a href="sponsor.html"><div id="sponsorsr" class="nr">Sponsor</div></a>
+					<a href="about.html"><div id="aboutusr" class="nr">About us</div></a>
+				</div></div>
+			<div class="nav-right-wrapper">
+				<div class="nav-right" id ="home">
+					<a href="index.html">HOME</a>
+				</div><!--
+			--><div class="nav-right">
+			<a href="">PRODUCTS &#9660;</a>
+			<div class="dropdown">
+				<div class="dropdown-data">
+					<ul>
+						<a href="products.html#biscuit"><li>Biscuits</li></a>
+						<a href="products.html#crackers"><li>Crackers</li></a>
+						<a href="products.html#chips"><li>Chips</li></a>
+					</ul>
+				</div>
+			</div>
+				</div><!--
+			--><div class="nav-right">
+			<a href="#">PURCHASE</a>
+				</div><!--
+			--><div class="nav-right">
+			<a href="sponsor.html">SPONSORS</a>
+				</div><!--
+			--><div class="nav-right">
+			<a href="about.html">ABOUT US</a>
+		</div>
+	</div>
+</div>
+</header>
+
+<form method="POST" action="product.html" name="formKu" onsubmit="return validasiFormKu()">
+	<div id="content">
+	<center>
+		<h1>PURCHASE</h1>
+		<table id="purchase">
+			<tr>
+				<td>
+					NAME
+				</td>
+				<td>
+					:
+				</td>
+				<td>
+					<input type="text" name="name">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					ADDRESS
+				</td>
+				<td>
+					:
+				</td>
+				<td>
+					<textarea name="address" id="address-input" rows=4 cols=22></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					PRODUCT
+				</td>
+				<td>
+					:
+				</td>
+				<td>
+					<select name="product">
+						<option value="0">--Choose One--</option>
+  						<option value="1">Biscuits</option>
+  						<option value="2">Crackers</option>
+  						<option value="3">Chips</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					QUANTITY
+				</td>
+				<td>
+					:
+				</td>
+				<td>
+					<input type="number" name="quantity" value="0">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					PAYMENT TYPE
+				</td>
+				<td>
+					:
+				</td>
+				<td>
+					<input type="radio" name="payment" value="credit"> Credit
+  					<input type="radio" name="payment" value="debit"> Debit
+				</td>
+			</tr>
+			
+			<tr>
+				<td colspan="3" align="center">
+					<input type="checkbox" name="toc" value="agree">I Agree with term of condition 
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3" align="center">
+					<input type="submit" name="Submit" value="Submit" width="100px">
+				</td >
+			</tr>
+		</table>
+			<td>
+				<span id="errMsg" style="color:white; text-decoration: bold;"></span>	
+			</td>
+	</center>
+</div>
+</form>
+
+
+<footer>
+	<center><div class="footer-text">&copy Yummy Snack 2017</div></center>
+</footer>
+ <script src="js/gmaps.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6tA1czonsaX6nb_-OZjLmG_C2QpRMGMc&callback=initMap">
+    </script>
+
+</body>
+<script type="text/javascript">
+	var err = document.getElementById('errMsg');
+	function validasiFormKu() 
+	{
+		// Validasi Nama
+		var name = document.formKu.name;
+		if(name.value == ''){
+			err.innerHTML = "Name can't be empty";
+			name.focus();
+			return false;
+		}
+
+		var address = document.formKu.address;
+		if(address.value == ''){
+			err.innerHTML = "Address can't be empty";
+			address.focus();
+			return false;
+		}else if(address.value.toLowerCase().indexOf("street")==-1 && address.value.toLowerCase().indexOf("st.")==-1){
+			err.innerHTML = "Address can't must contain street or st.";
+			address.focus();
+			return false;
+		}else if(address.value.split(" ").length<1){
+			err.innerHTML = "Address can't must contain more than 2 words"
+			address.focus();
+			return false;
+		}
+
+		var product = document.formKu.product;
+		if(product.value == '0'){
+			err.innerHTML = "You must choose Product";
+			product.focus();
+			return false;
+		}
+
+		var quantity = document.formKu.quantity;
+		if(quantity.value <= 0 || quantity.value>100){
+			err.innerHTML = "Quantity must be betwwen 1 and 100";
+			quantity.focus();
+			return false;
+		}
+
+		var payment = document.formKu.payment;
+		if(payment.value == ""){
+			err.innerHTML = "You must choose Payment";
+			return false;
+		}
+
+		var toc = document.formKu.toc;
+		if(toc.checked == false){
+			err.innerHTML = "You must agree the ToC";
+			return false;
+		}
+
+		err.innerHTML ="";
+		return true;
+	}
+</script>
+
+</html>

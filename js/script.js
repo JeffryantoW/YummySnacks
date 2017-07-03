@@ -1,4 +1,9 @@
 var header;
+var isFirefox = typeof InstallTrigger !== 'undefined';
+
+if (!isFirefox){
+	alert('For better experience, Please open this website with mozilla firefox!');
+}
 
 $(document).ready(function(){
 	header = window.location.hash;
@@ -24,7 +29,7 @@ $(document).ready(function(){
 			'display': 'none',
 		});
 	}
-		if (header == '#chips') {
+	if (header == '#chips') {
 		$('#crackers-wrapper').css({
 			'display': 'none',
 		});
@@ -63,7 +68,7 @@ function openSnacks(param){
 		});
 	}
 
-		if (param == 'chips'){
+	if (param == 'chips'){
 		$('#crackers-wrapper').css({
 			'display': 'none',
 		});
@@ -76,3 +81,21 @@ function openSnacks(param){
 	}
 
 }
+var checker = true;
+function popMenu() {
+	if(checker){
+		$('.nav-responsive').css({
+			'display': 'block'
+		});
+		checker = false;
+	}
+	else{
+		$('.nav-responsive').css({
+			'display': 'none'
+		});
+		checker = true;
+	}
+
+}
+
+
